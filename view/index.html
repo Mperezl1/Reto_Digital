@@ -21,7 +21,8 @@
         <a href="#punto_2" class="nav-enlace">Punto 2</a>
         <a href="#punto_3" class="nav-enlace">Punto 3</a>
     </nav>
-    <section id="punto_md5">
+
+    <section>
         <label>Ingrese el valor Md5 Hash: </label> <br />
         <input type="text" id="valor1"><br />
         <sub id = "campo_texto">
@@ -33,6 +34,34 @@
 
     <section>
         <h3 id="punto_1" name="punto_1">Code challenge one</h3>
+        <div id="contenedor">
+            <div>
+                <label>Ingrese cadena: </label> <br />
+                <div id="contenedor2">
+                    <div id="corcheteref">
+                        <p id="corchete">[</p>
+                    </div>
+                    <div>
+                        <input type="text" id="valor2"><br />
+                    </div>
+                    <div id="corcheteref">
+                        <p id="corchete2">]</p>
+                    </div>
+                </div>
+                
+                <sub id = "campo_texto">
+                    <input type="button" value="Calcular2" onclick="mostar_punto1()">
+                </sub>
+            </div>
+            <div>
+                <label>Ingrese Valor de S: </label> <br />
+                <input type="text" id="valor3"><br />
+            </div>
+        </div>
+
+        <h3>Resultado:</h3>
+        <p id="resultado2"></p>  
+
     </section>
 
     <section>

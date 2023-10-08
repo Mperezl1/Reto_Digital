@@ -45,7 +45,7 @@ nav {
 
 
 /* Estilos para la sección de MD5 */
-#punto_md5 {
+section {
     background-color: #fff;
     padding: 20px;
     margin: 20px 0;
@@ -94,6 +94,11 @@ h3 {
     color: #333;
 }
 
+#resultado2 {
+    font-size: 18px;
+    color: #333;
+}
+
 /* Estilos para enlaces */
 a {
     text-decoration: none;
@@ -128,4 +133,60 @@ a:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#valor2 {
+    width:171mm;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+    margin-left: -35%;
+}
+
+#valor3 {
+    width: 15%;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  #contenedor > div {
+    width: 50%;
+  }
+
+  #contenedor2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 22mm;
+  }
+  
+  #contenedor2 > div {
+    width: 10%;
+    padding: 0;
+    margin: 0mm;
+  }
+
+#corchete {
+    font-size: 18mm;
+    margin: -5mm;
+    margin-left: 2mm;
+}
+
+#corchete2 {
+    font-size: 18mm;
+    margin: -5mm;
+    margin-left: 152mm;
 }
