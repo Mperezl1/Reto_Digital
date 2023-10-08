@@ -1,4 +1,4 @@
-//Deficiones
+//Funciones
 function Imprimir(texto){
     console.log(texto);
 }
@@ -10,6 +10,10 @@ function Eliminate_S(r){
     else{
         return 0;
     }
+}
+
+function mostar_punto1(){
+    
 }
 
 //Variables
