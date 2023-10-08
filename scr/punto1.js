@@ -16,7 +16,9 @@ function Eliminate_S(r){
 var A = [1, 20, 6, 4, 50, 66];
 var S = 6;
 var R = new Array();
-var indice, indice2;
+var indice1, indice2;
+//var z, z2;
+
 // main 
 
 for (let i = 0; i < A.length; i++) {
@@ -26,25 +28,22 @@ for (let i = 0; i < A.length; i++) {
         //indice2 = 0;
         R = A[i];
         R = Array.from(String(R), Number);
-        Imprimir("R =" + R);
+        
+        indice1 = Eliminate_S(R[0]);
+        indice2 = Eliminate_S(R[1]);
 
-        Imprimir("Si hay un S en indice = " + indice) + (Eliminate_S(R[0]) ? indice == 1 : indice == 0) ;
-        Imprimir("Si hay un S en indice 2 = " + indice2) + (Eliminate_S(R[1]) ? indice2 == 1 : indice2 == 0); 
-
-        if(indice == 1 && indice2 == 1){
+        if(indice1 == 1 && indice2 == 1){
             R.pop();
             R.shift();
         }
-        (indice == 1 && indice2 == 0) ? R.shift() : null;
-        (indice == 0 && indice2 == 1) ? R.pop() : null;
-
-        Imprimir("R = " + R);
-
+        (indice1 == 1 && indice2 == 0) ? R.shift() : null;
+        (indice1 == 0 && indice2 == 1) ? R.pop() : null;
    }
     else{
-        Imprimir("Un digito");
+        //Imprimir("Un digito");
     }
     
 }
+Imprimir("Nuevo A = " + A);
 
 
