@@ -4,7 +4,7 @@ function Imprimir(texto){
 }
 
 function Eliminate_S(r){
-    if(r == 6){
+    if(r >= S){
         return 1;
     }
     else{
@@ -13,16 +13,18 @@ function Eliminate_S(r){
 }
 
 //Variables
-var A = [1, 20, 6, 4, 50, 66];
+var A = [6, 2, 1];
+//var A = [1, 2, 3, 4, 5, 6];
+//var A = [60, 6, 5, 4, 3, 2, 7, 7, 29, 1];
 var S = 6;
 var R = new Array();
-var indice1, indice2;
-//var z, z2;
+var B = [];
+var indice1, indice2, indice3;
 
 // main 
-
+Imprimir("A = " + A);
 for (let i = 0; i < A.length; i++) {
-    Imprimir("A = " + A[i]);
+    //Imprimir("A = " + A[i]);
     if(A[i]*10 >= 100){
         //indice = 0; 
         //indice2 = 0;
@@ -32,18 +34,35 @@ for (let i = 0; i < A.length; i++) {
         indice1 = Eliminate_S(R[0]);
         indice2 = Eliminate_S(R[1]);
 
+
         if(indice1 == 1 && indice2 == 1){
-            R.pop();
-            R.shift();
+            R = [];
+            A.splice(i,1,"b");
         }
-        (indice1 == 1 && indice2 == 0) ? R.shift() : null;
-        (indice1 == 0 && indice2 == 1) ? R.pop() : null;
+        if(indice1 == 1 && indice2 == 0){
+            R.shift();
+            A.splice(i,1,R);
+
+        }        if(indice1 == 0 && indice2 == 1){
+            R.pop();
+            A.splice(i,1,R);
+        }
    }
     else{
-        //Imprimir("Un digito");
+        indice3 = Eliminate_S(A[i]);
+        if(indice3 == 1){
+            A.splice(i,1,"b");
+        }
     }
     
 }
-Imprimir("Nuevo A = " + A);
 
+for (var i = A.length - 1; i >= 0 ; i--){
+    if (A[i] === "b"){
+        A.splice(i,1);
+    }
+}
 
+for (var i = A.length - 1; i >= 0 ; i--){
+    B.push(A[i]);
+}
