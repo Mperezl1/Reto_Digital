@@ -184,6 +184,17 @@ a:hover {
     
 }
 
+#valor6 {
+    width:171mm;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+    margin-left: -70%;
+}
+
 
 #contenedor {
     display: flex;
@@ -218,4 +229,16 @@ a:hover {
     font-size: 18mm;
     margin: -5mm;
     margin-left: 152mm;
+}
+
+#corchete3 {
+    font-size: 18mm;
+    margin: -5mm;
+    margin-left: 2mm;
+}
+
+#corchete4 {
+    font-size: 18mm;
+    margin: -5mm;
+    margin-left: 108mm;
 }
