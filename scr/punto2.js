@@ -5,7 +5,7 @@ function Imprimir(texto){
 S = 6;
 A = [-6, -5, 0, 5, 6];
 S = S*11;
-Imprimir(A);
+//Imprimir(A);
 
 for (let i = 0; i < A.length; i++) {
     A[i] = A[i]*A[i];
@@ -21,7 +21,7 @@ for (var i = A.length - 1; i >= 0 ; i--){
         A.splice(i,1);
     }
 }
-Imprimir("A = " + A);
+//Imprimir("A = " + A);
 var aux ;
 
 for (let i = 0; i < A.length; i++) 
@@ -37,5 +37,5 @@ for (let i = 0; i < A.length; i++)
     }
 }
 
-Imprimir("A² ordenado = "+ A);
+//Imprimir("A² ordenado = "+ A);
 
