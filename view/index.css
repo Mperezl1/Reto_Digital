@@ -99,6 +99,11 @@ h3 {
     color: #333;
 }
 
+#resultado3 {
+    font-size: 18px;
+    color: #333;
+}
+
 /* Estilos para enlaces */
 a {
     text-decoration: none;
@@ -154,7 +159,31 @@ a:hover {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: x-large;
+    
 }
+
+#valor4 {
+    width:171mm;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+    margin-left: -35%;
+}
+
+#valor5 {
+    width: 15%;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+    
+}
+
 
 #contenedor {
     display: flex;

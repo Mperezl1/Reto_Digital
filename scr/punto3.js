@@ -19,7 +19,7 @@ for (let i = 0; i < A.length; i++)
         B.push(A[i]);
     }
 }
-Imprimir(B);
+//Imprimir(B);
 
 // Ordenar el vector para manera mas fácil
 for (let i = 0; i < B.length; i++) 
@@ -35,7 +35,7 @@ for (let i = 0; i < B.length; i++)
     }
 }
 
-Imprimir("B -> " + B);
+//Imprimir("B -> " + B);
 
 
 for (let i = 0; i < B.length; i++) 
@@ -49,4 +49,4 @@ for (let i = 0; i < B.length; i++)
         break;
     }
 }
-Imprimir(mincoin);
+//Imprimir(mincoin);

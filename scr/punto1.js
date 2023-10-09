@@ -9,8 +9,10 @@ function mostar_punto1(){
      var A = elementos.map(function(elemento) {
        return parseFloat(elemento.trim());
      });
-     Imprimir(W);
+     //Imprimir(W);
+
      var S = document.getElementById("valor3").value;
+
      var resultado2 = document.getElementById("resultado2");
 
     function Imprimir(texto){
